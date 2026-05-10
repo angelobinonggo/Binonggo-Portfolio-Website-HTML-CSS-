@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelo Binonggo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Angelo Binonggo | UI/UX Designer</title>
+    <meta name="description"
+        content="Portfolio of Angelo Binonggo, a passionate UI/UX Designer and Web Developer from the Philippines.">
+    <link rel="stylesheet" href="styles.css?v=2.0">
+    <script src="script.js?v=2.0" defer></script>
 </head>
+
 <body>
 
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>UI/UX Designer</p>
-            <h1>Hi, I'm <span>Angelo</span><br>Binonggo From the Philippines!</h1>
-        </div>
+    <div class="floating-circle" style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+    <div class="floating-circle" style="width: 300px; height: 300px; bottom: 10%; right: -50px; animation-delay: -5s;">
     </div>
-</div>
 
-<!------------------------- About ------------------------->
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png" alt="user">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et quod eum distinctio delectus vitae hic fugiat earum deserunt rerum totam, excepturi ipsum, dolorum a voluptate reiciendis rem ea. Veniam id aperiam doloribus doloremque eaque hic animi vel quos similique iusto voluptatem quibusdam impedit commodi, iste totam. Quam veritatis nostrum qui magnam facere minus perferendis assumenda vel iusto eum hic aliquam quidem voluptas aliquid, itaque quasi natus nisi inventore voluptatum eos maiores. Dolor quibusdam, deleniti exercitationem recusandae autem, totam aperiam ipsa laborum inventore suscipit pariatur, odit voluptates accusantium officiis nesciunt est corporis aspernatur. Qui corporis quae ut aperiam voluptates ea.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo-wrapper">
+                    <img src="images/logo.png" alt="Angelo Logo" class="logo">
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Android/iOS Apps</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>HTML</span><br>2 years</li>
-                        <li><span>CSS</span><br>2 years</li>
-                        <li><span>JavaScript</span><br>1 year</li>
-                        <li><span>Python</span><br>1 year</li>
-                        <li><span>C++</span><br>1 year</li>
-                        <li><span>Java</span><br>1 year</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2023 - Present</span><br>University of Science and Technology of Southern Philippines</li>
-                        <li><span>2019 - 2021</span><br>Lourdes College</li>
-                        <li><span>2015 - 2019</span><br>Blessed Mother College</li>
-                        <li><span>2010 - 2015</span><br>Iponan Elementary School</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Angelo</span><br>Binonggo From the Philippines!</h1>
             </div>
         </div>
-    </div>
-</div>
+    </header>
 
-<script>
+    <!------------------------- About ------------------------->
+    <section id="about">
+        <div class="container">
+            <div class="row hidden-scroll">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="Angelo Binonggo">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Hello! I'm a dedicated UI/UX Designer and Developer passionate about crafting beautiful,
+                        intuitive, and dynamic digital experiences. I specialize in merging clean aesthetics with robust
+                        functionality to build web and mobile applications that stand out. Always eager to learn, I
+                        continuously explore new technologies to deliver premium designs.</p>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontent){
-            tabcontent.classList.remove("active-tab")
-        }
-    }
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
 
-</script>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span>Designing intuitive Web & App Interfaces</li>
+                            <li><span>Web Development</span>Frontend & Backend Web App Development</li>
+                            <li><span>App Development</span>Building scalable Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frontend (HTML/CSS)</span>2+ years of crafting responsive layouts</li>
+                            <li><span>JavaScript</span>1+ year of adding dynamic interactivity</li>
+                            <li><span>Python & C++</span>1+ year of backend logic and problem-solving</li>
+                            <li><span>Java</span>1+ year of object-oriented programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Present</span>University of Science and Technology of Southern Philippines
+                            </li>
+                            <li><span>2019 - 2021</span>Lourdes College</li>
+                            <li><span>2015 - 2019</span>Blessed Mother College</li>
+                            <li><span>2010 - 2015</span>Iponan Elementary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
